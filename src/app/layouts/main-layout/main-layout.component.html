@@ -1,0 +1,42 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-toolbar color="primary" class="bar">Menu</mat-toolbar>
+    <mat-nav-list>
+      <!-- <a mat-list-item routerLink="/purchase">Purchase</a> -->
+      <a mat-list-item routerLink="/">Home</a>
+      <a mat-list-item (click)="cretePurchse()">CreatePurchase</a>
+      <a mat-list-item (click)="goToPurchase()">Purchase</a>
+      
+      <!-- <a mat-list-item routerLink="/createpurchase">CreatePurchase</a> -->
+      <a mat-list-item routerLink="/updatepurchase/:id">UpdatePurchase</a>
+      <!--<a mat-list-item routerLink="/purchasedetails/:id">DetailsPurchased</a>-->
+      
+
+    
+    
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary" class="bar">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>Purchasing Cloves System</span>
+      <!-- <div class="nav">
+        <button mat-raised-button="primary" onclick="" routerLink="login"> log out</button>
+        </div> -->
+  </mat-toolbar> 
+    <!-- Add Content Here -->
+    <div>
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

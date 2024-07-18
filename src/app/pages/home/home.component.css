@@ -1,0 +1,23 @@
+div.arc{
+    margin: 5px;
+    border: 1px solid #ccc;
+    float:left;
+    width: 350px;
+}
+
+
+
+div.arc img{
+    width: 100%;
+    height: 180px;
+}
+
+div.key{
+    text-align: center;
+    font-style: inherit;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: bolder;
+
+}

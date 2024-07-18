@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.details {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Adjust the width as needed */
+    max-width: 600px; /* Set a maximum width for the details section */
+}
+
+.details label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.details div {
+    margin-bottom: 10px;
+}

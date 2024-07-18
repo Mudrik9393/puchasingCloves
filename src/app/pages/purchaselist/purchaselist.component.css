@@ -1,0 +1,27 @@
+table {
+    width: 70%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    margin-left: 13%;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 0.5rem;
+    text-align: left;
+}
+
+thead {
+    background-color: #333;
+    color: #ccc;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2{
+   text-align: center; 
+   font-family: 'Times New Roman', Times, serif;
+   font-weight: 800;
+}
